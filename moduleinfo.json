@@ -1,0 +1,21 @@
+{
+    "name": "class-extensions",
+    "archiveName": "robinthehood/class-extensions",
+    "sourceDir": "new_files",
+    "version": "auto",
+    "shortDescription": "Kurzbeschreibung für class-extensions",
+    "description": "Beschreibung für class-extensions",
+    "installation": "Installationsanleitung für class-extensions",
+    "developer": "",
+    "developerWebsite": "https://...",
+    "website": "https://...",
+    "category": "",
+    "price": "",
+    "require": {
+        "composer/autoload": "^1.1.0",
+        "robinthehood/modified-std-module": "^0.1.0"
+    },
+    "modifiedCompatibility": [
+        "2.0.4.2"
+    ]
+}

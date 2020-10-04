@@ -14,4 +14,25 @@ class CheckoutRthClassExtensions extends StdModule
     {
         $this->init('MODULE_CHECKOUT_RTH_CLASS_EXTENSIONS');
     }
+
+
+    public function payment_modules($modules)
+    {
+        // Return ...
+    }
+    
+    public function unallowed_payment_modules($unallowed_modules)
+    {
+        // Return ...
+    }
+
+    public function shipping_modules($modules)
+    {
+        // Return ...
+    }
+    
+    public function unallowed_shipping_modules($unallowed_modules)
+    {
+        // Return ...
+    }
 }

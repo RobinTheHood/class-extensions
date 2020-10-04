@@ -21,7 +21,7 @@ class CheckoutRthClassExtensions extends StdModule
         // Return ...
     }
     
-    public function unallowed_payment_modules($unallowed_modules)
+    public function unallowed_payment_modules($unallowedModules)
     {
         // Return ...
     }
@@ -31,7 +31,7 @@ class CheckoutRthClassExtensions extends StdModule
         // Return ...
     }
     
-    public function unallowed_shipping_modules($unallowed_modules)
+    public function unallowed_shipping_modules($unallowedModules)
     {
         // Return ...
     }

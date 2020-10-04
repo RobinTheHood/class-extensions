@@ -14,4 +14,19 @@ class ProductRthClassExtensions extends StdModule
     {
         $this->init('MODULE_PRODUCT_RTH_CLASS_EXTENSIONS');
     }
+
+    public function construct($data)
+    {
+        // Return ...
+    }
+
+    public function buildDataArray($productData, $array, $image)
+    {
+        // Return ...
+    }
+
+    public function productImage($returnName, $name, $type ,$path)
+    {
+        // Return ...
+    }
 }

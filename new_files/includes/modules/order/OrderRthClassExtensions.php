@@ -14,4 +14,34 @@ class OrderRthClassExtensions extends StdModule
     {
         $this->init('MODULE_ORDER_RTH_CLASS_EXTENSIONS');
     }
+
+    public function add_products($products, $ordersProducts)
+    {
+        // Return ...
+    }
+    
+    public function add_attributes($productsAttributes, $attributes)
+    {
+        // Return ...
+    }
+    
+    public function order_data($orderData, $orderDataValues, $oId, $orderLangId)
+    {
+        // Return ...
+    } 
+    
+    public function order_data_attributes($attributesArray, $attributesDataValues, $orderDataValues, $oId, $orderLangId)
+    {
+        // Return ...
+    }    
+    
+    public function cart_products($products, $productId)
+    {
+        // Return ...
+    }
+
+    public function cart_attributes($productsAttributes, $attributes, $productId, $value, $products)
+    {
+        // Return ...
+    }
 }

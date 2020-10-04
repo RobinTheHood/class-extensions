@@ -19,109 +19,109 @@ class CategoriesRthClassExtensions extends StdModule
 
     // *** CATEGORIES FUNCTIONS ***
 
-    public function insert_category_before($sql_data_array, $categories_data)
+    public function insert_category_before($sqlDataArray, $categoryData)
     {
         // Return parameter must be in first place
     }
 
-    public function insert_category_after($categories_data, $categories_id): void
+    public function insert_category_after($categoryData, $categoryId): void
     {
         
     }
 
-    public function insert_category_desc($sql_data_array, $categories_data, $categories_id, $language_id)
+    public function insert_category_desc($sqlDataArray, $categoryData, $categoryId, $languageId)
     {
         // Return parameter must be in first place
     }
 
-    public function copy_category($sql_data_array, $src_category_id, $dest_category_id, $ctype)
+    public function copy_category($sqlDataArray, $srcCategoryId, $destCategoryId, $ctype)
     {
         // Return parameter must be in first place
     }
 
-    public function copy_category_desc($sql_data_array, $src_category_id, $dest_category_id, $ctype, $new_cat_id)
+    public function copy_category_desc($sqlDataArray, $srcCategoryId, $destCategoryId, $ctype, $newCategoryId)
     {
         // Return parameter must be in first place
     }
 
-    public function move_category($src_category_id, $dest_category_id): void
+    public function move_category($srcCategoryId, $destCategoryId): void
     {
         // Return void
     }
 
-    public function remove_category($category_id): void
+    public function remove_category($categoryId): void
     {
         // Return void
     }
     
-    public function delete_category_image($category_image): void
+    public function delete_category_image($categoryImage): void
     {
         // Return void
     }
     
-    public function copy_category_image($src_pic, $dest_pic): void
+    public function copy_category_image($srcImage, $destImage): void
     {
         // Return void
     }
     
-    public function categories_image_process($categories_image_name, $categories_image_name_process): void
+    public function categories_image_process($categoryImageName, $categoryImageNameProcess): void
     {
         // Return void
     }
 
     // *** PRODUCTS FUNCTIONS ***
 
-    public function insert_product_before($sql_data_array, $products_data)
+    public function insert_product_before($sqlDataArray, $productData)
     {
         // Return parameter must be in first place
     }
 
-    public function insert_product_after($products_data, $products_id): void
+    public function insert_product_after($productData, $productId): void
     {
         // Return void
     }
 
-    public function insert_product_desc($sql_data_array, $products_data, $products_id, $language_id)
+    public function insert_product_desc($sqlDataArray, $productData, $productId, $languageId)
     {
         // Return parameter must be in first place
     }
 
-    public function remove_product($products_id): void
+    public function remove_product($productId): void
     {
         // Return void
     }
 
-    public function delete_product($product_id, $product_categories): void
+    public function delete_product($productId, $productCategory): void
     {
         // Return void
     }
 
-    public function duplicate_product_before($sql_data_array, $src_products_id, $dest_categories_id)
+    public function duplicate_product_before($sqlDataArray, $srcProductId, $destCategoryId)
     {
         // Return parameter must be in first place
     }
 
-    public function duplicate_product_after($sql_data_array, $src_products_id, $dest_categories_id, $dup_products_id)
+    public function duplicate_product_after($sqlDataArray, $srcProductId, $destCategoryId, $dupProductId)
     {
         // Return parameter must be in first place
     }
 
-    public function duplicate_product_desc($sql_data_array, $src_products_id, $dest_categories_id, $dup_products_id)
+    public function duplicate_product_desc($sqlDataArray, $srcProductId, $destCategoryId, $dupProductId)
     {
         // Return parameter must be in first place
     }
     
-    public function image_name($image_name, $id, $counter, $suffix, $name_arr, $srcID, $data_arr)
+    public function image_name($imageName, $id, $counter, $suffix, $nameArr, $srcId, $dataArr)
     {
         // Return parameter must be in first place
     }
     
-    public function saveSpecialsData($sql_data_array, $products_data)
+    public function saveSpecialsData($sqlDataArray, $productData)
     {
         // Return parameter must be in first place
     }
     
-    public function insert_mo_images_after($products_data, $iImg, $products_id)
+    public function insert_mo_images_after($productData, $iImg, $productId)
     {
         // Return parameter must be in first place
     }

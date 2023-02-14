@@ -36,7 +36,7 @@ class shopping_cart_rth_class_extensions
 
     public function __construct()
     {
-        // The value of $this->prefix is: MODULE_EXPORT_RTH_CLASS_EXTENSIONS
+        // The value of $this->prefix is: MODULE_SHOPPING_CART_RTH_CLASS_EXTENSIONS
         $this->prefix = 'MODULE_' . strtoupper(self::class);
 
         $this->code        = self::class;

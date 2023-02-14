@@ -1,5 +1,6 @@
 <?php
-$moduleType = 'MODULE_CATEGORIES';
+
+$moduleType = 'MODULE_PRODUCT';
 $moduleName = 'RTH_CLASS_EXTENSIONS';
 $prefix = $moduleType . '_' . $moduleName  . '_';
 

@@ -1,4 +1,5 @@
 <?php
+
 $moduleType = 'MODULE_XTC_PRICE';
 $moduleName = 'RTH_CLASS_EXTENSIONS';
 $prefix = $moduleType . '_' . $moduleName  . '_';

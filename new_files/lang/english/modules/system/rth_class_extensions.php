@@ -1,5 +1,6 @@
 <?php
-$moduleType = 'MODULE_SHIPPING';
+
+$moduleType = 'MODULE';
 $moduleName = 'RTH_CLASS_EXTENSIONS';
 $prefix = $moduleType . '_' . $moduleName  . '_';
 

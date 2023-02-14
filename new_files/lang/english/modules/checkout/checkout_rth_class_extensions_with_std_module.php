@@ -1,6 +1,7 @@
 <?php
-$moduleType = 'MODULE';
-$moduleName = 'RTH_CLASS_EXTENSIONS';
+
+$moduleType = 'MODULE_CHECKOUT';
+$moduleName = 'RTH_CLASS_EXTENSIONS_WITH_STD_MODULE';
 $prefix = $moduleType . '_' . $moduleName  . '_';
 
 define($prefix . 'TITLE', 'EN Title of ' . $moduleType . '_' . $moduleName);

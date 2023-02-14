@@ -1,5 +1,6 @@
 <?php
-$moduleType = 'MODULE_MAIN';
+
+$moduleType = 'MODULE_SHOPPING_CART';
 $moduleName = 'RTH_CLASS_EXTENSIONS';
 $prefix = $moduleType . '_' . $moduleName  . '_';
 

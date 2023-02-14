@@ -18,6 +18,7 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
  * The class name must be the same as the file name without .php
+ *
  * Filename                 | Classname
  * mc_my_first_module.php   | mc_my_first_module
  * McMyFirstModule.php      | McMyFirstModule

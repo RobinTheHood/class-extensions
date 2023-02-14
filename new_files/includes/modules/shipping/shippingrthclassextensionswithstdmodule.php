@@ -20,6 +20,12 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * NOTE:
  *
  * The PHP class name and the file name must not contain underscores _ for shipping module classes.
+ *
+ * The class name must be the same as the file name without .php
+ *
+ * Filename                 | Classname
+ * mcmyfirstmodule.php      | mcmyfirstmodule
+ * McMyFirstModule.php      | McMyFirstModule
  */
 class shippingrthclassextensionswithstdmodule extends StdModule
 {

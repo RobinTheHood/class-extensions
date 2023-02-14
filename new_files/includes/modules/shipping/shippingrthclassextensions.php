@@ -15,6 +15,12 @@ defined('_VALID_XTC') or die('Direct Access to this location is not allowed.');
  * NOTE:
  *
  * The PHP class name and the file name must not contain underscores _ for shipping module classes.
+ *
+ * The class name must be the same as the file name without .php
+ *
+ * Filename                 | Classname
+ * mcmyfirstmodule.php      | mcmyfirstmodule
+ * McMyFirstModule.php      | McMyFirstModule
  */
 class shipping_rth_class_extensions
 {
@@ -41,7 +47,7 @@ class shipping_rth_class_extensions
 
     public function __construct()
     {
-        // The value of $this->prefix is: MODULE_SHIPPING_RTH_CLASS_EXTENSIONS
+        // The value of $this->prefix is: MODULE_SHIPPINGRTHCLASSEXTENSIONS
         $this->prefix = 'MODULE_' . strtoupper(self::class);
 
         $this->code        = self::class;

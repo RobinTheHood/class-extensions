@@ -11,6 +11,15 @@
 
 defined('_VALID_XTC') or die('Direct Access to this location is not allowed.');
 
+/**
+ * The class name must be the same as the file name without .php and
+ * there must be a configuration constant STATUS with the following structure:
+ * MODULE_XTCPRICE_<CLASS_NAME_UPPER>_STATUS
+ *
+ * Filename                 | Classname             | Configuration
+ * mc_my_first_module.php   | mc_my_first_module    | MODULE_XTCPRICE_MC_MY_FIRST_MODULE_STATUS
+ * McMyFirstModule.php      | McMyFirstModule       | MODULE_XTCPRICE_MCMYFIRSTMODULE_STATUS
+ */
 class xtc_price_rth_class_extensions
 {
     /** @var string $prefix **/
@@ -36,7 +45,7 @@ class xtc_price_rth_class_extensions
 
     public function __construct()
     {
-        // The value of $this->prefix is: MODULE_XTC_PRICE_RTH_CLASS_EXTENSIONS
+        // The value of $this->prefix is: MODULE_XTCPRICE_RTH_CLASS_EXTENSIONS
         $this->prefix = 'MODULE_' . strtoupper(self::class);
 
         $this->code        = self::class;

@@ -166,7 +166,8 @@ class categories_rth_class_extensions
         // Return parameter must be in first place
     }
 
-    // *** HELPER METHODS ***
+    // *** HELPER METHODS TO FACILITATE CONFIGURATION ***
+
     protected function addConfiguration(
         string $key,
         string $value,

@@ -21,7 +21,7 @@ class order_rth_class_extensions_with_std_module extends StdModule
 
     public function __construct()
     {
-        $this->init('ORDER_RTH_CLASS_EXTENSIONS');
+        $this->init('ORDER_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function add_products($products, $ordersProducts)

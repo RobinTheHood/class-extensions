@@ -73,7 +73,8 @@ class product_rth_class_extensions
         // Return ...
     }
 
-    // *** HELPER METHODS ***
+    // *** HELPER METHODS TO FACILITATE CONFIGURATION ***
+
     protected function addConfiguration(
         string $key,
         string $value,

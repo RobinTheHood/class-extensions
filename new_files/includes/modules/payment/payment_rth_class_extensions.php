@@ -59,6 +59,9 @@ class payment_rth_class_extensions
     }
 
     // *** HELPER METHODS ***
+
+    // *** HELPER METHODS TO FACILITATE CONFIGURATION ***
+
     protected function addConfiguration(
         string $key,
         string $value,

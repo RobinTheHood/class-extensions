@@ -58,7 +58,8 @@ class export_rth_class_extensions
         $this->deleteConfiguration('STATUS');
     }
 
-    // *** HELPER METHODS ***
+    // *** HELPER METHODS TO FACILITATE CONFIGURATION ***
+
     protected function addConfiguration(
         string $key,
         string $value,

@@ -21,7 +21,7 @@ class xtc_price_rth_class_extensions_with_std_module extends StdModule
 
     public function __construct($currency, $cGroup)
     {
-        $this->init('XTC_PRICE_RTH_CLASS_EXTENSIONS');
+        $this->init('XTC_PRICE_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
         // Return ...
     }
 

@@ -21,7 +21,7 @@ class product_rth_class_extensions_with_std_module extends StdModule
 
     public function __construct()
     {
-        $this->init('PRODUCT_RTH_CLASS_EXTENSIONS');
+        $this->init('PRODUCT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function construct($data)

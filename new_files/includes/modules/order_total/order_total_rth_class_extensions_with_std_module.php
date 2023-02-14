@@ -21,6 +21,6 @@ class order_total_rth_class_extensions_with_std_module extends StdModule
 
     public function __construct()
     {
-        $this->init('ORDER_TOTAL_RTH_CLASS_EXTENSIONS');
+        $this->init('ORDER_TOTAL_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 }

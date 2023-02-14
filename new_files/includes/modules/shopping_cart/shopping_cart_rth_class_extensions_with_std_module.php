@@ -21,7 +21,7 @@ class shopping_cart_rth_class_extensions_with_std_module extends StdModule
 
     public function __construct()
     {
-        $this->init('SHOPPING_CART_RTH_CLASS_EXTENSIONS');
+        $this->init('SHOPPING_CART_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public static function restore_contents_products_db($sqlDataArray, $productId, $tableBasket, $qty, $type)

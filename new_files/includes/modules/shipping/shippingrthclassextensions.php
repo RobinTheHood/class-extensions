@@ -11,6 +11,11 @@
 
 defined('_VALID_XTC') or die('Direct Access to this location is not allowed.');
 
+/**
+ * NOTE:
+ *
+ * The PHP class name and the file name must not contain underscores _ for shipping module classes.
+ */
 class shipping_rth_class_extensions
 {
     /** @var string $prefix **/
@@ -58,7 +63,12 @@ class shipping_rth_class_extensions
         $this->deleteConfiguration('STATUS');
     }
 
-    // *** HELPER METHODS ***
+    public function quote(string $method = '', string $module = ''): array
+    {
+    }
+
+    // *** HELPER METHODS TO FACILITATE CONFIGURATION ***
+
     protected function addConfiguration(
         string $key,
         string $value,

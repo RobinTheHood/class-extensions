@@ -16,11 +16,20 @@
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
-class shipping_rth_class_extensions_with_std_module extends StdModule
+/**
+ * NOTE:
+ *
+ * The PHP class name and the file name must not contain underscores _ for shipping module classes.
+ */
+class shippingrthclassextensionswithstdmodule extends StdModule
 {
 
     public function __construct()
     {
-        $this->init('SHIPPING_RTH_CLASS_EXTENSIONS');
+        $this->init('SHIPPINGRTHCLASSEXTENSIONSWITHSTDMODULE');
+    }
+
+    public function quote(string $method = '', string $module = ''): array
+    {
     }
 }

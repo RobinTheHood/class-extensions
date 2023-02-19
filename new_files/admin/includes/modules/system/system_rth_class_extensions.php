@@ -14,11 +14,10 @@ defined('_VALID_XTC') or die('Direct Access to this location is not allowed.');
 /**
  * The class name must be the same as the file name without .php
  *
- * Filename                 | Classname
- * mc_my_first_module.php   | mc_my_first_module
- * McMyFirstModule.php      | McMyFirstModule
+ * Filename                      | Classname
+ * system_mc_my_first_module.php | system_mc_my_first_module
  */
-class rth_class_extensions
+class system_rth_class_extensions
 {
     /** @var string $prefix **/
     public $prefix;
@@ -43,7 +42,7 @@ class rth_class_extensions
 
     public function __construct()
     {
-        // The value of $this->prefix is: MODULE_RTH_CLASS_EXTENSIONS
+        // The value of $this->prefix is: MODULE_SYSTEM_RTH_CLASS_EXTENSIONS
         $this->prefix = 'MODULE_' . strtoupper(self::class);
 
         $this->code        = self::class;

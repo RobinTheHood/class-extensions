@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -21,16 +23,16 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * there must be a configuration constant STATUS with the following structure:
  * MODULE_SHOPPING_CART_<CLASS_NAME_UPPER>_STATUS
  *
- * Filename                 | Classname             | Configuration
- * mc_my_first_module.php   | mc_my_first_module    | MODULE_SHOPPING_CART_MC_MY_FIRST_MODULE_STATUS
- * McMyFirstModule.php      | McMyFirstModule       | MODULE_SHOPPING_CART_MC_MY_FIRST_MODULE_STATUS
+ * Filename                             | Classname                        | Configuration
+ * shopping_cart_mc_my_first_module.php | shopping_cart_mc_my_first_module | MODULE_SHOPPING_CART_SHOPPING_CART_MC_MY_FIRST_MODULE_STATUS
  */
 class shopping_cart_rth_class_extensions_with_std_module extends StdModule
 {
 
     public function __construct()
     {
-        $this->init('SHOPPING_CART_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        $moduleType = 'MODULE_SHOPPING_CART';
+        parent::__construct($moduleType . '_' . 'SHOPPING_CART_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public static function restore_contents_products_db($sqlDataArray, $productId, $tableBasket, $qty, $type)

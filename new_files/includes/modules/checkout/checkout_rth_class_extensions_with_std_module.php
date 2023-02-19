@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -21,15 +23,15 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * there must be a configuration constant STATUS with the following structure:
  * MODULE_CHECKOUT_<CLASS_NAME_UPPER>_STATUS
  *
- * Filename                 | Classname             | Configuration
- * mc_my_first_module.php   | mc_my_first_module    | MODULE_CHECKOUT_MC_MY_FIRST_MODULE_STATUS
- * McMyFirstModule.php      | McMyFirstModule       | MODULE_CHECKOUT_MCMYFIRSTMODULE_STATUS
+ * Filename                          | Classname                      | Configuration
+ * checkout_mc_my_first_module.php   | checkout_mc_my_first_module    | MODULE_CHECKOUT_CHECKOUT_MC_MY_FIRST_MODULE_STATUS
  */
 class checkout_rth_class_extensions_with_std_module extends StdModule
 {  
     public function __construct()
     {
-        $this->init('CHECKOUT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        $moduleType = 'MODULE_CHECKOUT';
+        parent::__construct($moduleType . '_' . 'CHECKOUT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function payment_modules($modules)

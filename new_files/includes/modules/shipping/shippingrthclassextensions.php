@@ -18,11 +18,10 @@ defined('_VALID_XTC') or die('Direct Access to this location is not allowed.');
  *
  * The class name must be the same as the file name without .php
  *
- * Filename                 | Classname
- * mcmyfirstmodule.php      | mcmyfirstmodule
- * McMyFirstModule.php      | McMyFirstModule
+ * Filename                    | Classname
+ * shippingmcmyfirstmodule.php | shippingmcmyfirstmodule
  */
-class shipping_rth_class_extensions
+class shippingrthclassextensions
 {
     /** @var string $prefix **/
     public $prefix;

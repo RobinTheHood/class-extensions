@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -22,15 +24,15 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * MODULE_PRODUCT_<CLASS_NAME_UPPER>_STATUS
  *
  * Filename                 | Classname             | Configuration
- * mc_my_first_module.php   | mc_my_first_module    | MODULE_PRODUCT_MC_MY_FIRST_MODULE_STATUS
- * McMyFirstModule.php      | McMyFirstModule       | MODULE_PRODUCT_MCMYFIRSTMODULE_STATUS
+ * prodcut_mc_my_first_module.php | product_mc_my_first_module | MODULE_PRODUCT_PRODUCT_MC_MY_FIRST_MODULE_STATUS
  */
 class product_rth_class_extensions_with_std_module extends StdModule
 {
 
     public function __construct()
     {
-        $this->init('PRODUCT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        $moduleType = 'MODULE_PRODUCT';
+        parent::__construct($moduleType . '_' . 'PRODUCT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function construct($data)

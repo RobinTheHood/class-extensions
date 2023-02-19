@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -21,15 +23,15 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * there must be a configuration constant STATUS with the following structure:
  * MODULE_MAIN_<CLASS_NAME_UPPER>_STATUS
  *
- * Filename                 | Classname             | Configuration
- * mc_my_first_module.php   | mc_my_first_module    | MODULE_MAIN_MC_MY_FIRST_MODULE_STATUS
- * McMyFirstModule.php      | McMyFirstModule       | MODULE_MAIN_MCMYFIRSTMODULE_STATUS
+ * Filename                      | Classname                  | Configuration
+ * main_mc_my_first_module.php   | main_mc_my_first_module    | MODULE_MAIN_MAIN_MC_MY_FIRST_MODULE_STATUS
  */
 class main_rth_class_extensions_with_std_module extends StdModule
 {
     public function __construct()
     {
-        $this->init('MAIN_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        $moduleType = 'MODULE_MAIN';
+        parent::__construct($moduleType . '_' . 'MAIN_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function getTaxInfo($taxInfo, $taxRate)

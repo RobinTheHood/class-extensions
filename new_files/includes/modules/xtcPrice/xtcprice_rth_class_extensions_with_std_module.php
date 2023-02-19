@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -21,16 +23,16 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  * there must be a configuration constant STATUS with the following structure:
  * MODULE_XTCPRICE_<CLASS_NAME_UPPER>_STATUS
  *
- * Filename                 | Classname             | Configuration
- * mc_my_first_module.php   | mc_my_first_module    | MODULE_XTCPRICE_MC_MY_FIRST_MODULE_STATUS
- * McMyFirstModule.php      | McMyFirstModule       | MODULE_XTCPRICE_MCMYFIRSTMODULE_STATUS
+ * Filename                        | Classname                   | Configuration
+ * xtcprice_mc_my_first_module.php | xtcprice_mc_my_first_module | MODULE_XTCPRICE_XTCPRICE_MC_MY_FIRST_MODULE_STATUS
  */
-class xtc_price_rth_class_extensions_with_std_module extends StdModule
+class xtcprice_rth_class_extensions_with_std_module extends StdModule
 {
 
     public function __construct($currency, $cGroup)
     {
-        $this->init('XTC_PRICE_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        $moduleType = 'MODULE_XTCPRICE';
+        parent::__construct($moduleType . '_' . 'XTCPRICE_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
         // Return ...
     }
 

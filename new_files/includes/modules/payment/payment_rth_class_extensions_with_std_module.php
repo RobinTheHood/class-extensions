@@ -14,21 +14,22 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
  * The class name must be the same as the file name without .php
  *
  * Filename                 | Classname
- * mc_my_first_module.php   | mc_my_first_module
- * McMyFirstModule.php      | McMyFirstModule
+ * payment_mc_my_first_module.php | payment_mc_my_first_module
  */
 class payment_rth_class_extensions_with_std_module extends StdModule
 {
 
     public function __construct()
     {
-        $this->init('PAYMENT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
+        parent::__construct('MODULE_PAYMENT_RTH_CLASS_EXTENSIONS_WITH_STD_MODULE');
     }
 
     public function update_status(): void

@@ -14,6 +14,8 @@
  * https://docs.module-loader.de
  */
 
+declare(strict_types=1);
+
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 /**
@@ -23,16 +25,15 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
  *
  * The class name must be the same as the file name without .php
  *
- * Filename                 | Classname
- * mcmyfirstmodule.php      | mcmyfirstmodule
- * McMyFirstModule.php      | McMyFirstModule
+ * Filename                     | Classname
+ * shippingmcmyfirstmodule.php  | shippingmcmyfirstmodule
  */
 class shippingrthclassextensionswithstdmodule extends StdModule
 {
 
     public function __construct()
     {
-        $this->init('SHIPPINGRTHCLASSEXTENSIONSWITHSTDMODULE');
+        parent::__construct('MODULESHIPPINGRTHCLASSEXTENSIONSWITHSTDMODULE');
     }
 
     public function quote(string $method = '', string $module = ''): array

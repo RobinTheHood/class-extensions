@@ -44,6 +44,18 @@ class shippingrthclassextensions
     /** @var string[] $keys **/
     public $keys;
 
+    /**
+     * Used by modified to determine the cheapest shipping method. Will produce
+     * a warning if missing. You likely need to fill this array with the results
+     * of the `quote` method.
+     *
+     * @see   /includes/classes/shipping.php:160
+     * @since 2.0.7.2
+     *
+     * @var array
+     */
+    public array $quotes = array();
+
     public function __construct()
     {
         // The value of $this->prefix is: MODULE_SHIPPINGRTHCLASSEXTENSIONS
